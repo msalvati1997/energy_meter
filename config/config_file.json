@@ -22,8 +22,8 @@
     }
   },
   "cpu-frequency-base": 1300,
-  "cpu-frequency-min": ,
-  "cpu-frequency-max": ,
+  "cpu-frequency-min": 400,
+  "cpu-frequency-max": 3900,
   "cpu-error-threshold": 2.0,
   "disable-dram-formula": true,
   "sensor-report-sampling-interval": 1000
