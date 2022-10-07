@@ -20,27 +20,24 @@ services:
     command:
       - "--config-file"
       - "/config_file_virtual.json"
-      - "python3 -m procfs_sensor --config-file config_procs.json"
     network_mode: "host"
-    ports:
-      - 8080:80
+ 
 
 
   procfs_sensor:
-    image: powerapi/procfs-sensor:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: procfssensor
     cap_add:
       - ALL
     volumes:
       - ./config_procs.json:/config_procs.json
-    command:
-      - "--config-file"
-      - "/config_procs.json"
-    ports:
-      - 8081:80
     network_mode: "host"
     pid : "hosts"
     depends_on:
-      - virtualwatts
+      virtualwatts: 
+        condition: service_started
 
   
   
