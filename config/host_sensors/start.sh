@@ -1,1 +1,0 @@
-./hwpc-sensor --config-file config_file.json

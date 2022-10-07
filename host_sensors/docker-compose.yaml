@@ -8,6 +8,13 @@ services:
     network_mode: "host"
     ports:
       - 27017:27017
+    restart : always
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/ --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
 
   power-api-hwpc:
     image: powerapi/hwpc-sensor:latest
@@ -17,7 +24,8 @@ services:
     privileged: true
     pid: "host"
     depends_on:
-      - mongo
+      mongo : 
+        condition: service_healthy
     volumes:
       - /sys:/sys
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
@@ -26,7 +34,7 @@ services:
     command:
       - "--config-file"
       - "/hwpc_config.json"
-    
+   
   
 
   power-api-smartwatts:
@@ -40,5 +48,6 @@ services:
       - "/smartwatts_config.json"
     depends_on:
       - mongo
+      - power-api-hwpc
     network_mode: "host"
   

@@ -1,0 +1,45 @@
+version: '3.4'
+
+services:
+  influxdb:
+    container_name: influxdb
+    image: influxdb:1.8
+    ports:
+      - 8086:8086
+    environment:
+      - INFLUXDB_DB=powerapi_formula
+
+  virtualwatts:
+    image: powerapi/virtualwatts:latest
+    cap_add:
+      - ALL
+    depends_on : 
+      - influxdb
+    volumes:
+      - ./config_file_virtual.json:/config_file_virtual.json
+    command:
+      - "--config-file"
+      - "/config_file_virtual.json"
+    network_mode: "host"
+    ports:
+      - 8080:80
+
+
+  procfs_sensor:
+    image: powerapi/procfs-sensor
+    cap_add:
+      - ALL
+    volumes:
+      - ./config_procs.json:/config_procs.json
+    command:
+      - "--config-file"
+      - "/config_procs.json"
+    network_mode: "host"
+    ports:
+      - 8081:80
+
+  
+  
+
+   
+ 
