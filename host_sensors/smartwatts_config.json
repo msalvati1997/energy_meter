@@ -24,6 +24,6 @@
   "cpu-frequency-max": 3500,
   "cpu-error-threshold": 2.0,
   "disable-dram-formula": true,
-  "sensor-report-sampling-interval": 1000
+  "sensor-report-sampling-interval": 500
 }
 

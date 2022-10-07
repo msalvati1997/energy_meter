@@ -25,7 +25,7 @@
             "collection": "prep"
         }
     },
-    "delay-threshold": 500.0 ,
-    "sensor-reports-sampling-interval": 1000.0
+    "delay-threshold": 500,
+    "sensor-reports-sampling-interval": 2000
 }
 
