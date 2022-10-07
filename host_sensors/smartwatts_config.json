@@ -12,11 +12,12 @@
   },
   "output": {
     "pusher_power": {
-      "type": "mongodb",
-      "model": "PowerReport",
-      "uri": "mongodb://127.0.0.1",
-      "db": "powerapi",
-      "collection": "smartwatts"
+       "type": "influxdb",
+        "model": "PowerReport",
+        "uri": "127.0.0.1",
+        "port": 8086,
+        "db": "powerapi_formula",
+        "collection": "smartwatts"
     }
   },
   "cpu-frequency-base": 2600,

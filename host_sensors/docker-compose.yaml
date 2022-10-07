@@ -2,12 +2,28 @@ version: '3.4'
 
 services:
 
+  influxdb:
+    container_name: influx
+    image: influxdb:1.8
+    ports:
+      - 8086:8086
+    environment:
+      - INFLUXDB_DB=powerapi_formula
+    healthcheck:
+      test: "curl -f http://localhost:8086/ping"
+      interval: 3s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
   mongo:
     container_name: mongo
     image: mongo
     network_mode: "host"
     ports:
       - 27017:27017
+    environment:
+      - "TZ=Europe/Rome" 
     restart : always
     healthcheck:
       test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/ --quiet
@@ -35,7 +51,6 @@ services:
       - "--config-file"
       - "/hwpc_config.json"
    
-  
 
   power-api-smartwatts:
     image: powerapi/smartwatts-formula
@@ -47,7 +62,11 @@ services:
       - "--config-file"
       - "/smartwatts_config.json"
     depends_on:
-      - mongo
-      - power-api-hwpc
+      influxdb : 
+         condition : service_healthy
+      power-api-hwpc : 
+         condition : service_started
     network_mode: "host"
   
+
+ 
