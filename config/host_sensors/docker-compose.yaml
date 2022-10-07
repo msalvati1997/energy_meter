@@ -2,6 +2,13 @@ version: '3.4'
 
 services:
 
+  mongo:
+    container_name: mongo
+    image: mongo
+    network_mode: "host"
+    ports:
+      - 27017:27017
+
   power-api-hwpc:
     image: powerapi/hwpc-sensor:latest
     cap_add:
@@ -9,29 +16,29 @@ services:
     network_mode: "host"
     privileged: true
     pid: "host"
+    depends_on:
+      - mongo
     volumes:
-      - ./hwpc_config.json:/hwpc_config.json
       - /sys:/sys
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
       - /tmp/powerapi-sensor-reporting:/reporting 
-      - /hwpc_config.json
+      - ./hwpc_config.json:/hwpc_config.json
     command:
       - "--config-file"
       - "/hwpc_config.json"
-   
-
+    
   
 
   power-api-smartwatts:
     image: powerapi/smartwatts-formula
- 
     cap_add:
       - ALL
-
     volumes:
       - ./smartwatts_config.json:/smartwatts_config.json
     command:
       - "--config-file"
       - "/smartwatts_config.json"
+    depends_on:
+      - mongo
     network_mode: "host"
   

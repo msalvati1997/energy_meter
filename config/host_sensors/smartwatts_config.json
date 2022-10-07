@@ -14,7 +14,6 @@
     "pusher_power": {
       "type": "mongodb",
       "model": "PowerReport",
-      "type": "mongodb",
       "uri": "mongodb://127.0.0.1",
       "db": "powerapi",
       "collection": "smartwatts"
