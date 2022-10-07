@@ -24,23 +24,5 @@ services:
  
 
 
-  procfs_sensor:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    container_name: procfssensor
-    cap_add:
-      - ALL
-    volumes:
-      - ./config_procs.json:/config_procs.json
-    network_mode: "host"
-    pid : "hosts"
-    depends_on:
-      virtualwatts: 
-        condition: service_started
-
-  
-  
-
    
  
