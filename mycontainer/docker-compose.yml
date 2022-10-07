@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  virtualwatts:
+    image: powerapi/virtualwatts:latest
+    cap_add:
+      - ALL
+    volumes:
+      - ./config_file_virtual.json:/config_file_virtual.json
+    command:
+      - "--config-file"
+      - "/config_file_virtual.json"
+    extra_hosts:
+      - "mongoservice:172.17.0.1" 
+    net: "host"
+
+   
+ 

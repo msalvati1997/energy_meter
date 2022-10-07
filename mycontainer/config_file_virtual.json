@@ -1,0 +1,29 @@
+{
+    "verbose": true,
+    "stream": true,
+    "input": { 
+        "puller_filedb": {
+         "type": "mongodb",
+         "uri": "mongodb://mongoservice:27017",
+         "db": "smartwatts",
+          "collection": "report"
+            },
+        "puller_tcpdb": {
+            "type" : "socket",
+            "model": "ProcfsReport",
+            "uri": "127.0.0.1",
+            "port": 8080
+        }
+    },
+    "output": {
+        "power_pusher": {
+            "type": "mongodb",
+            "uri": "mongodb://mongoservice:27017",
+            "db": "virtualwatts",
+            "collection": "report"
+            }
+    },
+    "delay-threshold": 500.0 ,
+    "sensor-reports-sampling-interval": 1000.0
+}
+

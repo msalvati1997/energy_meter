@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+
+  influxmydb:
+    container_name: influxmydb
+    image: influxdb:1.8
+    ports:
+      - "8086:8086"
+    environment:
+      - INFLUXDB_DB=powerapi_formula
+  
+  power-api-formula:
+    image: powerapi/virtualwatts
+ 
+    cap_add:
+      - ALL
+    depends_on :
+      - influxmydb 
+    volumes:
+      - ./config_file.json:/config_file.json
+    command:
+      - "--config-file"
+      - "/config_file.json"
+    network_mode: "host"
+  
