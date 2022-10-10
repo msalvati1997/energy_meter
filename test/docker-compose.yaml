@@ -6,9 +6,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=20000
-       - --num-threads=1
+       - --threads=1
+       - --time=0
        - run
 
   cpu-performance-20000-2: 
@@ -16,9 +17,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=20000
-       - --num-threads=2
+       - --threads=2
+       - --time=0
        - run
 
   cpu-performance-10000-1: 
@@ -26,9 +28,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=10000
-       - --num-threads=1
+       - --threads=1
+       - --time=0
        - run
 
   cpu-performance-10000-2: 
@@ -36,9 +39,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=10000
-       - --num-threads=2
+       - --threads=2
+       - --time=0
        - run
 
   cpu-performance-5000-1: 
@@ -46,9 +50,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=5000
-       - --num-threads=1
+       - --threads=1
+       - --time=0
        - run
 
   cpu-performance-5000-2: 
@@ -56,17 +61,10 @@ services:
      image :  severalnines/sysbench
      command :
        - sysbench
-       - --test=cpu
+       - cpu
        - --cpu-max-prime=5000
-       - --num-threads=2
+       - --threads=2
+       - --time=0
        - run
 
-  memory-test-1 : 
-     container_name : memory-test-1
-     image :  severalnines/sysbench
-     command :
-       - sysbench
-       - --test=memory
-       - --num-threads=2
-       - --memory-total-size=1000
-       - run
+ 
