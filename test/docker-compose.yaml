@@ -79,7 +79,7 @@ services:
        - --time=0
        - run
 
-  cpu-performance-1000-events-10-rate: 
+  cpu-performance-10000-events-10-rate: 
      container_name : cpu-performance-1000-events-10-rate
      image :  severalnines/sysbench
      command :
@@ -87,11 +87,11 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=2
-       - --events=1000
+       - --events=10000
        - --rate=10
        - run
   
-  cpu-performance-1000-events-20-rate: 
+  cpu-performance-10000-events-20-rate: 
      container_name : cpu-performance-1000-events-20-rate
      image :  severalnines/sysbench
      command :
@@ -99,11 +99,11 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=2
-       - --events=1000
+       - --events=10000
        - --rate=20
        - run
 
-  cpu-performance-2000-events-10-rate: 
+  cpu-performance-20000-events-10-rate: 
      container_name : cpu-performance-2000-events-10-rate
      image :  severalnines/sysbench
      command :
@@ -111,11 +111,11 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=2
-       - --events=2000
+       - --events=20000
        - --rate=10
        - run
     
-  cpu-performance-2000-events-20-rate: 
+  cpu-performance-20000-events-20-rate: 
      container_name : cpu-performance-2000-events-20-rate
      image :  severalnines/sysbench
      command :
@@ -123,7 +123,7 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=2
-       - --events=2000
+       - --events=20000
        - --rate=20
        - run
     
