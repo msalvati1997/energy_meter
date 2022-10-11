@@ -1,10 +1,10 @@
 # Misurare l'energia di un container
 Energy meter of a docker container
 
-# I sensori
+## I sensori
 Run ```docker-compose up``` nella directory /host_sensors/ per far partire i sensori sull'host.
 
-# I test 
+## I test 
 Run ```docker-compose up``` nella directory /test/ per far partire i container di sysbench con i differenti test.
 
 # Grafana dashboards
