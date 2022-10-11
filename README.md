@@ -9,7 +9,7 @@ Run ```docker-compose up``` nella directory /test/ per far partire i container d
 
 ## Grafana dashboards
 
- [Link to Grafana Dashboards](http://localhost:3000/dashboard/snapshot/S0QWWa7O7OyoajfSFeJSvC2SCgfab469)
+ [Link to Grafana Dashboards](https://snapshots.raintank.io/dashboard/snapshot/NHc99sdeMQlPYSTg5ps4dsWPHUPSWOif)
 
 ## Autore
 
