@@ -11,11 +11,11 @@ Run ```docker-compose up``` nella directory /test/ per far partire i container d
 
  [Link to Grafana Dashboards](http://localhost:3000/dashboard/snapshot/S0QWWa7O7OyoajfSFeJSvC2SCgfab469)
 
-## Author
+## Autore
 
 - [Martina Salvati](https://github.com/msalvati1997)   (0292307)
 
-## References
+## Riferimenti
 
 [1] [SmartWatts: Self-Calibrating Software-Defined Power Meter for
 Containers](https://arxiv.org/pdf/2001.02505.pdf). Guillaume Fieni,
