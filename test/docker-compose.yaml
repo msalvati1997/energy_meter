@@ -9,31 +9,41 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=0
+       - --time=300000
        - run
 
-  cpu-performance-20000-2: 
-     container_name : cpu-performance-20000-2
+  cpu-performance-20000-5: 
+     container_name : cpu-performance-20000-5
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
-       - --threads=2
-       - --time=0
+       - --threads=5
+       - --time=300000
        - run
 
-  cpu-performance-20000-4: 
-     container_name : cpu-performance-20000-4
+  cpu-performance-20000-10: 
+     container_name : cpu-performance-20000-10
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
-       - --threads=4
-       - --time=0
+       - --threads=10
+       - --time=300000
        - run
 
+  cpu-performance-20000-20: 
+     container_name : cpu-performance-20000-20
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=20000
+       - --threads=20
+       - --time=300000
+       - run
 
   cpu-performance-10000-1: 
      container_name : cpu-performance-10000-1
@@ -43,7 +53,7 @@ services:
        - cpu
        - --cpu-max-prime=10000
        - --threads=1
-       - --time=0
+       - --time=300000
        - run
 
   cpu-performance-10000-2: 
@@ -54,7 +64,7 @@ services:
        - cpu
        - --cpu-max-prime=10000
        - --threads=2
-       - --time=0
+       - --time=300000
        - run
 
   cpu-performance-5000-1: 
@@ -65,7 +75,7 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=1
-       - --time=0
+       - --time=300000
        - run
 
   cpu-performance-5000-2: 
@@ -76,7 +86,7 @@ services:
        - cpu
        - --cpu-max-prime=5000
        - --threads=2
-       - --time=0
+       - --time=300000
        - run
 
   cpu-performance-10000-events-10-rate: 
@@ -85,10 +95,11 @@ services:
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=20000
        - --threads=2
        - --events=10000
        - --rate=10
+       - --time=300000
        - run
   
   cpu-performance-10000-events-20-rate: 
@@ -97,10 +108,11 @@ services:
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=20000
        - --threads=2
        - --events=10000
        - --rate=20
+       - --time=300000
        - run
 
   cpu-performance-20000-events-10-rate: 
@@ -109,10 +121,11 @@ services:
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=20000
        - --threads=2
        - --events=20000
        - --rate=10
+       - --time=300000
        - run
     
   cpu-performance-20000-events-20-rate: 
@@ -121,12 +134,87 @@ services:
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=20000
        - --threads=2
        - --events=20000
        - --rate=20
+       - --time=300000
        - run
     
-  
+  cpu-seq1: 
+     container_name : cpu-seq1
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=20000
+       - --threads=1
+       - --time=300000
+       - run
 
+  cpu-seq2 : 
+     container_name : cpu-seq2
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=20000
+       - --threads=1
+       - --time=200000
+       - run
+  
+  cpu-seq3 : 
+     container_name : cpu-seq3
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=20000
+       - --threads=1
+       - --time=100000
+       - run 
  
+  cpu-05 : 
+     container_name : cpu-05
+     image :  severalnines/sysbench
+     cpus: 0.5
+     restart: unless-stopped
+     command :
+       - sysbench
+       - cpu
+       - --time=300000
+       - run 
+
+  cpu-1 : 
+     container_name : cpu-1
+     image :  severalnines/sysbench
+     restart: unless-stopped
+     cpus: 1
+     command :
+       - sysbench
+       - cpu
+       - --time=300000
+       - run 
+
+  
+  cpu-15 : 
+     container_name : cpu-15
+     image :  severalnines/sysbench
+     cpus: 1.5
+     restart: unless-stopped
+     command :
+       - sysbench
+       - cpu
+       - --time=300000
+       - run 
+
+  cpu-2 : 
+     container_name : cpu-2
+     image :  severalnines/sysbench
+     cpus: 2
+     restart: unless-stopped
+     command :
+       - sysbench
+       - cpu
+       - --time=300000
+       - run 
