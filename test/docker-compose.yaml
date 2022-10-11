@@ -11,6 +11,17 @@ services:
        - --threads=1
        - --time=300
        - run
+  
+  cpu-performance-20000-2: 
+     container_name : cpu-performance-20000-2
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=20000
+       - --threads=2
+       - --time=300
+       - run
 
   cpu-performance-20000-5: 
      container_name : cpu-performance-20000-5
@@ -45,46 +56,46 @@ services:
        - --time=300
        - run
 
-  cpu-performance-10000-1: 
+  cpu-performance-100000-1: 
      container_name : cpu-performance-10000-1
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=10000
+       - --cpu-max-prime=100000
        - --threads=1
        - --time=300
        - run
 
-  cpu-performance-10000-2: 
-     container_name : cpu-performance-10000-2
+  cpu-performance-100000-2: 
+     container_name : cpu-performance-100000-2
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=10000
+       - --cpu-max-prime=100000
        - --threads=2
        - --time=300
        - run
 
-  cpu-performance-5000-1: 
-     container_name : cpu-performance-5000-1
+  cpu-performance-50000-1: 
+     container_name : cpu-performance-50000-1
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=50000
        - --threads=1
        - --time=300
        - run
 
-  cpu-performance-5000-2: 
-     container_name : cpu-performance-5000-2
+  cpu-performance-50000-2: 
+     container_name : cpu-performance-50000-2
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
-       - --cpu-max-prime=5000
+       - --cpu-max-prime=50000
        - --threads=2
        - --time=300
        - run
