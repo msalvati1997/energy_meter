@@ -189,20 +189,40 @@ services:
      container_name : cpu-05
      image :  severalnines/sysbench
      cpus: 0.5
+     deploy:
+      resources:
+       limits:
+        cpus: '0.5'
+        memory: 50M
+       reservations:
+          cpus: '0.25'
+          memory: 20M
      command :
        - sysbench
        - cpu
        - --time=300
+       - --events=20000
+       - --rate=10
        - run 
 
   cpu-1 : 
      container_name : cpu-1
      image :  severalnines/sysbench
      cpus: 1
+     deploy:
+      resources:
+       limits:
+        cpus: '1'
+        memory: 25M
+       reservations:
+          cpus: '0.5'
+          memory: 20M
      command :
        - sysbench
        - cpu
        - --time=300
+       - --events=20000
+       - --rate=10
        - run 
 
   
@@ -210,18 +230,40 @@ services:
      container_name : cpu-15
      image :  severalnines/sysbench
      cpus: 1.5
+     deploy:
+      resources:
+       limits:
+        cpus: '1.5'
+        memory: 50M
+       reservations:
+          cpus: '1'
+          memory: 30M
      command :
        - sysbench
        - cpu
        - --time=300
+       - --events=20000
+       - --rate=10
        - run 
 
   cpu-2 : 
      container_name : cpu-2
      image :  severalnines/sysbench
      cpus: 2
+     deploy: 
+      resources:
+       limits:
+        cpus: '2'
+        memory: 100M
+       reservations:
+        cpus: '1.5'
+        memory: 50M
      command :
        - sysbench
        - cpu
        - --time=300
+       - --events=20000
+       - --rate=10
        - run 
+
+  
