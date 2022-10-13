@@ -9,7 +9,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=300
+       - --events=20000
        - run
   
   cpu-performance-20000-2: 
@@ -20,7 +20,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-20000-5: 
@@ -31,7 +31,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=5
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-20000-10: 
@@ -42,7 +42,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=10
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-20000-20: 
@@ -53,7 +53,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=20
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-100000-1: 
@@ -64,7 +64,7 @@ services:
        - cpu
        - --cpu-max-prime=100000
        - --threads=1
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-100000-2: 
@@ -75,7 +75,7 @@ services:
        - cpu
        - --cpu-max-prime=100000
        - --threads=2
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-50000-1: 
@@ -86,7 +86,7 @@ services:
        - cpu
        - --cpu-max-prime=50000
        - --threads=1
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-50000-2: 
@@ -97,7 +97,7 @@ services:
        - cpu
        - --cpu-max-prime=50000
        - --threads=2
-       - --time=300
+       - --events=20000
        - run
 
   cpu-performance-10000-events-10-rate: 
@@ -110,7 +110,6 @@ services:
        - --threads=2
        - --events=10000
        - --rate=10
-       - --time=300
        - run
   
   cpu-performance-10000-events-20-rate: 
@@ -123,7 +122,6 @@ services:
        - --threads=2
        - --events=10000
        - --rate=20
-       - --time=300
        - run
 
   cpu-performance-20000-events-10-rate: 
@@ -136,7 +134,6 @@ services:
        - --threads=2
        - --events=20000
        - --rate=10
-       - --time=300
        - run
     
   cpu-performance-20000-events-20-rate: 
@@ -149,7 +146,6 @@ services:
        - --threads=2
        - --events=20000
        - --rate=20
-       - --time=300
        - run
     
   cpu-seq1: 
@@ -160,7 +156,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=300
+       - --time=180
        - run
 
   cpu-seq2 : 
@@ -171,7 +167,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=200
+       - --time=120
        - run
   
   cpu-seq3 : 
@@ -182,7 +178,7 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=100
+       - --time=60
        - run 
  
   cpu-05 : 
@@ -193,16 +189,12 @@ services:
       resources:
        limits:
         cpus: '0.5'
-        memory: 50M
        reservations:
           cpus: '0.25'
-          memory: 20M
      command :
        - sysbench
        - cpu
-       - --time=300
        - --events=20000
-       - --rate=10
        - run 
 
   cpu-1 : 
@@ -213,16 +205,12 @@ services:
       resources:
        limits:
         cpus: '1'
-        memory: 25M
        reservations:
           cpus: '0.5'
-          memory: 20M
      command :
        - sysbench
        - cpu
-       - --time=300
        - --events=20000
-       - --rate=10
        - run 
 
   
@@ -234,16 +222,12 @@ services:
       resources:
        limits:
         cpus: '1.5'
-        memory: 50M
        reservations:
           cpus: '1'
-          memory: 30M
      command :
        - sysbench
        - cpu
-       - --time=300
        - --events=20000
-       - --rate=10
        - run 
 
   cpu-2 : 
@@ -254,16 +238,34 @@ services:
       resources:
        limits:
         cpus: '2'
-        memory: 100M
        reservations:
         cpus: '1.5'
-        memory: 50M
      command :
        - sysbench
        - cpu
-       - --time=300
        - --events=20000
-       - --rate=10
        - run 
 
+  cpu-io-rndrd-500M : 
+     container_name : cpu-io-rndrd-500M
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=500M  prepare
+          sysbench fileio --file-total-size=500M  --file-test-mode=rndrw  --max-time=180 --max-requests=0 run
+          sysbench fileio --file-total-size=500M  cleanup
+          "
+
+
+  cpu-io-rndrd-1G : 
+     container_name : cpu-io-rndrd-1G
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=1G prepare
+          sysbench fileio --file-total-size=1G --file-test-mode=rndrw --max-time=180 --max-requests=0 run
+          sysbench fileio --file-total-size=1G cleanup
+          "
+
+  
   
