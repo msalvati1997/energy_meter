@@ -1,0 +1,68 @@
+version: '3.3'
+
+services:
+  cpu-05 : 
+     container_name : cpu-05
+     image :  severalnines/sysbench
+     deploy:
+      resources:
+       limits:
+        cpus: '0.5'
+       reservations:
+          cpus: '0.25'
+     command :
+       - sysbench
+       - cpu
+       - --events=200000
+       - --time=300
+       - run 
+
+  cpu-1 : 
+     container_name : cpu-1
+     image :  severalnines/sysbench
+     deploy:
+      resources:
+       limits:
+        cpus: '1'
+       reservations:
+          cpus: '0.5'
+     command :
+       - sysbench
+       - cpu
+       - --events=200000
+       - --time=300
+       - run 
+
+  
+  cpu-075 : 
+     container_name : cpu-075
+     image :  severalnines/sysbench
+     deploy:
+      resources:
+       limits:
+        cpus: '0.75'
+       reservations:
+          cpus: '0.5'
+     command :
+       - sysbench
+       - cpu
+       - --events=200000
+       - --time=300
+       - run 
+
+  cpu-25 : 
+     container_name : cpu-025
+     image :  severalnines/sysbench
+     cpus: 02
+     deploy: 
+      resources:
+       limits:
+        cpus: '0.25'
+       reservations:
+        cpus: '0.1'
+     command :
+       - sysbench
+       - cpu
+       - --events=200000
+       - --time=300
+       - run 

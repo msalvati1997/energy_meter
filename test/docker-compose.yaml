@@ -1,4 +1,4 @@
-version: '3.4'
+version: '2.2'
 
 services:
   cpu-performance-20000-1: 
@@ -57,7 +57,7 @@ services:
        - run
 
   cpu-performance-100000-1: 
-     container_name : cpu-performance-10000-1
+     container_name : cpu-performance-100000-1
      image :  severalnines/sysbench
      command :
        - sysbench
@@ -67,16 +67,6 @@ services:
        - --time=300
        - run
 
-  cpu-performance-100000-2: 
-     container_name : cpu-performance-100000-2
-     image :  severalnines/sysbench
-     command :
-       - sysbench
-       - cpu
-       - --cpu-max-prime=100000
-       - --threads=2
-       - --time=300
-       - run
 
   cpu-performance-50000-1: 
      container_name : cpu-performance-50000-1
@@ -89,66 +79,52 @@ services:
        - --time=300
        - run
 
-  cpu-performance-50000-2: 
-     container_name : cpu-performance-50000-2
-     image :  severalnines/sysbench
-     command :
-       - sysbench
-       - cpu
-       - --cpu-max-prime=50000
-       - --threads=2
-       - --time=300
-       - run
 
-  cpu-performance-10000-events-10-rate: 
-     container_name : cpu-performance-1000-events-10-rate
+  cpu-performance-10-rate: 
+     container_name : cpu-performance-10-rate
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --events=100000
        - --rate=10
        - --time=300
        - run
   
-  cpu-performance-10000-events-20-rate: 
-     container_name : cpu-performance-1000-events-20-rate
+  cpu-performance-20-rate: 
+     container_name : cpu-performance-20-rate
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --events=100000
        - --rate=20
        - --time=300
        - run
 
-  cpu-performance-20000-events-10-rate: 
-     container_name : cpu-performance-2000-events-10-rate
+  cpu-performance-30-rate: 
+     container_name : cpu-performance-30-rate
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --events=200000
-       - --rate=10
+       - --rate=30
        - --time=300
        - run
-    
-  cpu-performance-20000-events-20-rate: 
-     container_name : cpu-performance-2000-events-20-rate
+
+  cpu-performance-40-rate: 
+     container_name : cpu-performance-40-rate
      image :  severalnines/sysbench
      command :
        - sysbench
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --events=200000
-       - --rate=20
+       - --rate=40
        - --time=300
        - run
     
@@ -185,10 +161,49 @@ services:
        - --time=60
        - run 
  
+
+  cpu-io-rndrd-500M-128 : 
+     container_name : cpu-io-rndrd-500M-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=500M  --file-num=128 prepare
+          sysbench fileio --file-total-size=500M  --file-test-mode=rndrw  --max-time=300  run
+          sysbench fileio --file-total-size=500M  --file-num=128 cleanup
+          "
+
+  cpu-io-rndrd-2G-128 : 
+     container_name : cpu-io-rndrd-2G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=2G --file-num=128 prepare
+          sysbench fileio --file-total-size=2G --file-test-mode=rndrw --file-num=128 --max-time=300 run
+          sysbench fileio --file-total-size=2G --file-num=128 cleanup
+          "
+
+  cpu-io-rndrd-3G-128: 
+     container_name : cpu-io-rndrd-3G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=3G --file-num=128 prepare
+          sysbench fileio --file-total-size=3G --file-num=128 --file-test-mode=rndrw --max-time=300 run
+          sysbench fileio --file-total-size=3G --file-num=128 cleanup
+          "
+  cpu-io-rndrd-4G-128: 
+     container_name : cpu-io-rndrd-4G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=4G --file-num=128 prepare
+          sysbench fileio --file-total-size=4G --file-num=128 --file-test-mode=rndrw --max-time=300 run
+          sysbench fileio --file-total-size=4G --file-num=128 cleanup
+          "
+
   cpu-05 : 
      container_name : cpu-05
      image :  severalnines/sysbench
-     cpus: 0.5
      deploy:
       resources:
        limits:
@@ -205,7 +220,6 @@ services:
   cpu-1 : 
      container_name : cpu-1
      image :  severalnines/sysbench
-     cpus: 1
      deploy:
       resources:
        limits:
@@ -218,18 +232,16 @@ services:
        - --events=200000
        - --time=300
        - run 
-
   
-  cpu-15 : 
-     container_name : cpu-15
+  cpu-075 : 
+     container_name : cpu-075
      image :  severalnines/sysbench
-     cpus: 1.5
      deploy:
       resources:
        limits:
-        cpus: '1.5'
+        cpus: '0.75'
        reservations:
-          cpus: '1'
+          cpus: '0.5'
      command :
        - sysbench
        - cpu
@@ -237,60 +249,19 @@ services:
        - --time=300
        - run 
 
-  cpu-2 : 
-     container_name : cpu-2
+  cpu-25 : 
+     container_name : cpu-025
      image :  severalnines/sysbench
-     cpus: 2
+     cpus: 02
      deploy: 
       resources:
        limits:
-        cpus: '2'
+        cpus: '0.25'
        reservations:
-        cpus: '1.5'
+        cpus: '0.1'
      command :
        - sysbench
        - cpu
        - --events=200000
        - --time=300
        - run 
-
-  cpu-io-rndrd-500M-128 : 
-     container_name : cpu-io-rndrd-500M-128
-     image :  severalnines/sysbench
-     command : >
-        bash -c "
-          sysbench fileio --file-total-size=500M  --file-num=128 prepare
-          sysbench fileio --file-total-size=500M  --file-test-mode=rndrw  --max-time=300  run
-          sysbench fileio --file-total-size=500M  --file-num=128 cleanup
-          "
-  cpu-io-rndrd-500M-256 : 
-     container_name : cpu-io-rndrd-500M-256
-     image :  severalnines/sysbench
-     command : >
-        bash -c "
-          sysbench fileio --file-total-size=500M  --file-num=256 prepare
-          sysbench fileio --file-total-size=500M  --file-test-mode=rndrw  --max-time=300  run
-          sysbench fileio --file-total-size=500M  --file-num=256 cleanup
-          "
-
-  cpu-io-rndrd-2G-128 : 
-     container_name : cpu-io-rndrd-2G-128
-     image :  severalnines/sysbench
-     command : >
-        bash -c "
-          sysbench fileio --file-total-size=2G --file-num=128 prepare
-          sysbench fileio --file-total-size=2G --file-test-mode=rndrw --file-num=128 --max-time=300 run
-          sysbench fileio --file-total-size=2G --file-num=128 cleanup
-          "
-
-  cpu-io-rndrd-2G-256: 
-     container_name : cpu-io-rndrd-2G-256
-     image :  severalnines/sysbench
-     command : >
-        bash -c "
-          sysbench fileio --file-total-size=2G --file-num=256 prepare
-          sysbench fileio --file-total-size=2G --file-num=256 --file-test-mode=rndrw --max-time=300 run
-          sysbench fileio --file-total-size=2G --file-num=256 cleanup
-          "
-
-  

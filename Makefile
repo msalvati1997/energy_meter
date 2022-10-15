@@ -5,11 +5,18 @@ help:
 
 
 test-parallel-containers:
-	docker compose -f $(path)/test/docker-compose.yaml --compatibility up 
+	docker compose -f $(path)/test/docker-compose.yaml up --remove-orphans
 	@echo "Test finished"
 
 start-sensors:
 	docker compose -f $(path)/host_sensors/docker-compose.yaml up  
+
+test-cpus:
+	docker compose -f $(path)/test/docker-compose-cpus.yaml up 
+	@echo "Test finished"	
+
+clean-test-cpus:
+	docker compose -f $(path)/test/docker-compose-cpus.yaml down
 
 clean-all:
 	@echo "Removing docker's images"
@@ -26,5 +33,7 @@ clean-test:
 	@echo "  clean all"
 	@echo "  clean test"
 	@echo "  test-parallel-containers"
+	@echo "  test-cpus"
+	@echo "  clean-test-cpus"
 	@echo "  start-sensors"
 
