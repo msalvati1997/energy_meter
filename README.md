@@ -7,9 +7,6 @@ Run ```docker-compose up``` nella directory /host_sensors/ per far partire i sen
 ## I test 
 Run ```docker-compose up``` nella directory /test/ per far partire i container di sysbench con i differenti test.
 
-## Grafana dashboards
-
- [Link to Grafana Dashboards](https://snapshots.raintank.io/dashboard/snapshot/NHc99sdeMQlPYSTg5ps4dsWPHUPSWOif)
 
 ## Autore
 
