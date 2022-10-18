@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.18)  18 OCT 2022 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.18)  18 OCT 2022 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -443,10 +443,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [8] [9 <./images//image30.png> <./images//image35.png> <./images//cpus.png>]
 [10 <./images//image33.png> <./images//image36.png>] (./report_consumi.aux) ) 
 Here is how much of TeX's memory you used:
- 3609 strings out of 480204
- 59469 string characters out of 5895009
- 434766 words of memory out of 5000000
- 21528 multiletter control sequences out of 15000+600000
+ 3610 strings out of 480204
+ 59484 string characters out of 5895009
+ 434769 words of memory out of 5000000
+ 21529 multiletter control sequences out of 15000+600000
  477150 words of font info for 59 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,7n,77p,252b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
