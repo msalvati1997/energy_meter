@@ -1,0 +1,65 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{9139675}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c88c0f3e0a99f65898648787abe285da}{%
+           family={Fieni},
+           familyi={F\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b0fdac440a03fb6c7746066d80d4bec9}{%
+           family={Rouvoy},
+           familyi={R\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a3444157771bd88713eb1e59eba46888}{%
+           family={Seinturier},
+           familyi={S\bibinitperiod},
+           given={Lionel},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \strng{fullhash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \strng{bibnamehash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \strng{authorbibnamehash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \strng{authornamehash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \strng{authorfullhash}{5fb9b0e068d6cf8a052b2a870b06c4ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fine-grained power monitoring of software activities becomes unavoidable to maximize the power usage efficiency of data centers. In particular, achieving an optimal scheduling of containers requires the deployment of software-defined power meters to go beyond the granularity of hardware power monitoring sensors, such as Power Distribution Units (PDU) or Intel's Running Average Power Limit (RAPL), to deliver power estimations of activities at the granularity of software containers. However, the definition of the underlying power models that estimate the power consumption remains a long and fragile process that is tightly coupled to the host machine.To overcome these limitations, this paper introduces SmartWatts: a lightweight power monitoring system that adopts online calibration to automatically adjust the CPU and DRAM power models in order to maximize the accuracy of runtime power estimations of containers. Unlike state-of-the-art techniques, SmartWatts does not require any a priori training phase or hardware equipment to configure the power models and can therefore be deployed on a wide range of machines including the latest power optimizations, at no cost.}
+      \field{booktitle}{2020 20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGRID)}
+      \field{month}{5}
+      \field{title}{SmartWatts: Self-Calibrating Software-Defined Power Meter for Containers}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{479\bibrangedash 488}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/CCGrid49817.2020.00-45
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,1096 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  24 OCT 2022 21:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen147
+\l@unhyphenated=\language6
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
+\it@lettering=\count198
+\it@doublequoteactive=\count199
+\it@ISOcompliance=\count266
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count267
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/guitlogo/guit.sty
+Package: guit 2020/07/03 v1.0.0-alpha.4 Logo del GuIT
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count268
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/guitlogo/guit.cfg
+File: guit.cfg 2020/07/03 v1.0.0-alpha.4 File di configurazione di guit.sty
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen150
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip17
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks23
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks24
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks25
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/filecontents/filecontents.sty
+Package: filecontents 2019/09/20 v1.5 Create an external file from within a LaT
+eX document
+
+
+Package filecontents Warning: This package is obsolete. Disabling it and
+(filecontents)                passing control to the filecontents environment
+(filecontents)                defined by the LaTeX kernel.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen159
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count283
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count284
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen160
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count285
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count286
+\c@Item=\count287
+\c@Hfootnote=\count288
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir cl
+ass
+
+No memoir class: memhfixc does nothing
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfsync/pdfsync.sty
+Package: pdfsync 2008/01/26 v1.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count291
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count292
+\c@listtotal=\count293
+\c@listcount=\count294
+\c@liststart=\count295
+\c@liststop=\count296
+\c@citecount=\count297
+\c@citetotal=\count298
+\c@multicitecount=\count299
+\c@multicitetotal=\count300
+\c@instcount=\count301
+\c@maxnames=\count302
+\c@minnames=\count303
+\c@maxitems=\count304
+\c@minitems=\count305
+\c@citecounter=\count306
+\c@maxcitecounter=\count307
+\c@savedcitecounter=\count308
+\c@uniquelist=\count309
+\c@uniquename=\count310
+\c@refsection=\count311
+\c@refsegment=\count312
+\c@maxextratitle=\count313
+\c@maxextratitleyear=\count314
+\c@maxextraname=\count315
+\c@maxextradate=\count316
+\c@maxextraalpha=\count317
+\c@abbrvpenalty=\count318
+\c@highnamepenalty=\count319
+\c@lownamepenalty=\count320
+\c@maxparens=\count321
+\c@parenlevel=\count322
+\blx@tempcnta=\count323
+\blx@tempcntb=\count324
+\blx@tempcntc=\count325
+\c@blx@maxsection=\count326
+\c@blx@maxsegment@0=\count327
+\blx@notetype=\count328
+\blx@parenlevel@text=\count329
+\blx@parenlevel@foot=\count330
+\c@blx@sectionciteorder@0=\count331
+\blx@entrysetcounter=\count332
+\blx@biblioinstance=\count333
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\biblabelsep=\skip64
+\bibitemsep=\skip65
+\bibnamesep=\skip66
+\bibinitsep=\skip67
+\bibparsep=\skip68
+\bibhang=\skip69
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language7
+\c@mincomprange=\count334
+\c@maxcomprange=\count335
+\c@mincompwidth=\count336
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count337
+\c@savedafterword=\count338
+\c@annotator=\count339
+\c@savedannotator=\count340
+\c@author=\count341
+\c@savedauthor=\count342
+\c@bookauthor=\count343
+\c@savedbookauthor=\count344
+\c@commentator=\count345
+\c@savedcommentator=\count346
+\c@editor=\count347
+\c@savededitor=\count348
+\c@editora=\count349
+\c@savededitora=\count350
+\c@editorb=\count351
+\c@savededitorb=\count352
+\c@editorc=\count353
+\c@savededitorc=\count354
+\c@foreword=\count355
+\c@savedforeword=\count356
+\c@holder=\count357
+\c@savedholder=\count358
+\c@introduction=\count359
+\c@savedintroduction=\count360
+\c@namea=\count361
+\c@savednamea=\count362
+\c@nameb=\count363
+\c@savednameb=\count364
+\c@namec=\count365
+\c@savednamec=\count366
+\c@translator=\count367
+\c@savedtranslator=\count368
+\c@shortauthor=\count369
+\c@savedshortauthor=\count370
+\c@shorteditor=\count371
+\c@savedshorteditor=\count372
+\c@labelname=\count373
+\c@savedlabelname=\count374
+\c@institution=\count375
+\c@savedinstitution=\count376
+\c@lista=\count377
+\c@savedlista=\count378
+\c@listb=\count379
+\c@savedlistb=\count380
+\c@listc=\count381
+\c@savedlistc=\count382
+\c@listd=\count383
+\c@savedlistd=\count384
+\c@liste=\count385
+\c@savedliste=\count386
+\c@listf=\count387
+\c@savedlistf=\count388
+\c@location=\count389
+\c@savedlocation=\count390
+\c@organization=\count391
+\c@savedorganization=\count392
+\c@origlocation=\count393
+\c@savedoriglocation=\count394
+\c@origpublisher=\count395
+\c@savedorigpublisher=\count396
+\c@publisher=\count397
+\c@savedpublisher=\count398
+\c@language=\count399
+\c@savedlanguage=\count400
+\c@origlanguage=\count401
+\c@savedoriglanguage=\count402
+\c@pageref=\count403
+\c@savedpageref=\count404
+\shorthandwidth=\skip70
+\shortjournalwidth=\skip71
+\shortserieswidth=\skip72
+\shorttitlewidth=\skip73
+\shortauthorwidth=\skip74
+\shorteditorwidth=\skip75
+\locallabelnumberwidth=\skip76
+\locallabelalphawidth=\skip77
+\localshorthandwidth=\skip78
+\localshortjournalwidth=\skip79
+\localshortserieswidth=\skip80
+\localshorttitlewidth=\skip81
+\localshortauthorwidth=\skip82
+\localshorteditorwidth=\skip83
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count405
+\c@textcitetotal=\count406
+\c@textcitemaxnames=\count407
+\c@biburlbigbreakpenalty=\count408
+\c@biburlbreakpenalty=\count409
+\c@biburlnumpenalty=\count410
+\c@biburlucpenalty=\count411
+\c@biburllcpenalty=\count412
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count413
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count414
+\c@bbx:relatedtotal=\count415
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count416
+\c@cbx@tempcntb=\count417
+\c@cbx@tempcntc=\count418
+\c@cbx@tempcntd=\count419
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count420
+\l__pdf_internal_box=\box52
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count421
+\@quotereset=\count422
+(./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=674.33032pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \it@ocap on input line 31.
+LaTeX Info: Redefining \it@ccap on input line 31.
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 31.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count423
+\scratchdimen=\dimen163
+\scratchbox=\box53
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count426
+\MPscratchDim=\dimen164
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count429
+)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+
+(./report.out) (./report.out)
+\@outlinefile=\write4
+\openout4 = `report.out'.
+
+Configuring pdfsync
+\PDFSYNC@ut=\write5
+\openout5 = `report.pdfsync'.
+
+\PDFSYNCf@li@=\count430
+\PDFSYNC@rder=\count431
+**** pdfsync.sty: Synchronizing at \everypar
+\PDFSYNCeveryp@r=\toks29
+**** pdfsync.sty: Synchronizing at \everymath
+\PDFSYNCeverym@th=\toks30
+**** pdfsync.sty: Synchronizing at \everyhbox
+\PDFSYNCeveryhb@x=\toks31
+**** pdfsync.sty: Synchronizing at \everyvbox
+\PDFSYNCeveryvb@x=\toks32
+**** pdfsync.sty: started
+Package biblatex Info: Trying to load language 'italian'...
+Package biblatex Info: ... file 'italian.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+File: italian.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `report.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'report.bbl' found.
+
+(./report.bbl)
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (./report.toc)
+\tf@toc=\write6
+\openout6 = `report.toc'.
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<images//powerAPI_archi.png, id=85, 693.59125pt x 382.42876pt>
+File: images//powerAPI_archi.png Graphic file (type png)
+<use images//powerAPI_archi.png>
+Package pdftex.def Info: images//powerAPI_archi.png  used on input line 48.
+(pdftex.def)             Requested size: 450.82896pt x 248.57573pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2 <./images//powerAPI_archi.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 52.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3]
+<images//smartwatts.png, id=98, 630.355pt x 347.2975pt>
+File: images//smartwatts.png Graphic file (type png)
+<use images//smartwatts.png>
+Package pdftex.def Info: images//smartwatts.png  used on input line 98.
+(pdftex.def)             Requested size: 409.72589pt x 225.74069pt.
+<images//image2.png, id=99, 1003.75pt x 501.875pt>
+File: images//image2.png Graphic file (type png)
+<use images//image2.png>
+Package pdftex.def Info: images//image2.png  used on input line 127.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image43.png, id=100, 1003.75pt x 501.875pt>
+File: images//image43.png Graphic file (type png)
+<use images//image43.png>
+Package pdftex.def Info: images//image43.png  used on input line 128.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images//image41.png, id=101, 1003.75pt x 501.875pt>
+File: images//image41.png Graphic file (type png)
+<use images//image41.png>
+Package pdftex.def Info: images//image41.png  used on input line 133.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4 <./images//smartwatts.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5 <./images//image2.png> <./images//image43.png> <./images//image41.png>]
+<images//image4.png, id=115, 1003.75pt x 501.875pt>
+File: images//image4.png Graphic file (type png)
+<use images//image4.png>
+Package pdftex.def Info: images//image4.png  used on input line 142.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image7.png, id=116, 1003.75pt x 501.875pt>
+File: images//image7.png Graphic file (type png)
+<use images//image7.png>
+Package pdftex.def Info: images//image7.png  used on input line 143.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6
+
+ <./images//image4.png> <./images//image7.png>]
+<images//image25.png, id=124, 1003.75pt x 501.875pt>
+File: images//image25.png Graphic file (type png)
+<use images//image25.png>
+Package pdftex.def Info: images//image25.png  used on input line 155.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image34.png, id=125, 1003.75pt x 501.875pt>
+File: images//image34.png Graphic file (type png)
+<use images//image34.png>
+Package pdftex.def Info: images//image34.png  used on input line 156.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7
+
+ <./images//image25.png> <./images//image34.png>]
+<images//image19.png, id=134, 1003.75pt x 501.875pt>
+File: images//image19.png Graphic file (type png)
+<use images//image19.png>
+Package pdftex.def Info: images//image19.png  used on input line 171.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image37.png, id=135, 1003.75pt x 501.875pt>
+File: images//image37.png Graphic file (type png)
+<use images//image37.png>
+Package pdftex.def Info: images//image37.png  used on input line 172.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8
+
+ <./images//image19.png> <./images//image37.png>]
+<images//image10.png, id=143, 1003.75pt x 501.875pt>
+File: images//image10.png Graphic file (type png)
+<use images//image10.png>
+Package pdftex.def Info: images//image10.png  used on input line 190.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image38.png, id=144, 1003.75pt x 501.875pt>
+File: images//image38.png Graphic file (type png)
+<use images//image38.png>
+Package pdftex.def Info: images//image38.png  used on input line 191.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--193
+[][][][]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9
+
+ <./images//image10.png> <./images//image38.png>]
+<images//image8.png, id=152, 1003.75pt x 501.875pt>
+File: images//image8.png Graphic file (type png)
+<use images//image8.png>
+Package pdftex.def Info: images//image8.png  used on input line 199.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image39.png, id=153, 1003.75pt x 501.875pt>
+File: images//image39.png Graphic file (type png)
+<use images//image39.png>
+Package pdftex.def Info: images//image39.png  used on input line 200.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10
+
+ <./images//image8.png> <./images//image39.png>]
+<images//image30.png, id=161, 1003.75pt x 501.875pt>
+File: images//image30.png Graphic file (type png)
+<use images//image30.png>
+Package pdftex.def Info: images//image30.png  used on input line 213.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image35.png, id=162, 1003.75pt x 501.875pt>
+File: images//image35.png Graphic file (type png)
+<use images//image35.png>
+Package pdftex.def Info: images//image35.png  used on input line 214.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//cpus.png, id=163, 893.3375pt x 103.38625pt>
+File: images//cpus.png Graphic file (type png)
+<use images//cpus.png>
+Package pdftex.def Info: images//cpus.png  used on input line 218.
+(pdftex.def)             Requested size: 357.32866pt x 41.35376pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11
+
+ <./images//image30.png> <./images//image35.png> <./images//cpus.png>]
+<images//image33.png, id=172, 1003.75pt x 501.875pt>
+File: images//image33.png Graphic file (type png)
+<use images//image33.png>
+Package pdftex.def Info: images//image33.png  used on input line 240.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image36.png, id=173, 1003.75pt x 501.875pt>
+File: images//image36.png Graphic file (type png)
+<use images//image36.png>
+Package pdftex.def Info: images//image36.png  used on input line 241.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12
+
+ <./images//image33.png> <./images//image36.png>] (./report.lof)
+\tf@lof=\write7
+\openout7 = `report.lof'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14
+
+] (./report.aux)
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: B7838868E5C0157AF4DF3DDA4ECB3C3C;2169.
+Package logreq Info: Writing requests to 'report.run.xml'.
+\openout1 = `report.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20063 strings out of 480195
+ 345227 string characters out of 5894659
+ 1050369 words of memory out of 5000000
+ 37708 multiletter control sequences out of 15000+600000
+ 481555 words of font info for 72 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 60i,31n,68p,1277b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/msalvati1997/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
+095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt10.pfb>
+Output written on report.pdf (14 pages, 1544463 bytes).
+PDF statistics:
+ 262 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+
