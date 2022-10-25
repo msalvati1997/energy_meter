@@ -30,8 +30,8 @@ clean-test:
 %:
 	@echo Available targets:
 	@echo "  help"
-	@echo "  clean all"
-	@echo "  clean test"
+	@echo "  clean-all"
+	@echo "  clean-test"
 	@echo "  test-parallel-containers"
 	@echo "  test-cpus"
 	@echo "  clean-test-cpus"
