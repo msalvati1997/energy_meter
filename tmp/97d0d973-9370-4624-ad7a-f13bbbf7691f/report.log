@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  24 OCT 2022 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.24)  25 OCT 2022 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,7 +806,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images//powerAPI_archi.png, id=85, 693.59125pt x 382.42876pt>
+<images//powerAPI_archi.png, id=95, 693.59125pt x 382.42876pt>
 File: images//powerAPI_archi.png Graphic file (type png)
 <use images//powerAPI_archi.png>
 Package pdftex.def Info: images//powerAPI_archi.png  used on input line 48.
@@ -834,30 +834,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-<images//smartwatts.png, id=98, 630.355pt x 347.2975pt>
+<images//smartwatts.png, id=108, 630.355pt x 347.2975pt>
 File: images//smartwatts.png Graphic file (type png)
 <use images//smartwatts.png>
 Package pdftex.def Info: images//smartwatts.png  used on input line 98.
 (pdftex.def)             Requested size: 409.72589pt x 225.74069pt.
-<images//image2.png, id=99, 1003.75pt x 501.875pt>
-File: images//image2.png Graphic file (type png)
-<use images//image2.png>
-Package pdftex.def Info: images//image2.png  used on input line 127.
-(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image43.png, id=100, 1003.75pt x 501.875pt>
-File: images//image43.png Graphic file (type png)
-<use images//image43.png>
-Package pdftex.def Info: images//image43.png  used on input line 128.
-(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images//image41.png, id=101, 1003.75pt x 501.875pt>
-File: images//image41.png Graphic file (type png)
-<use images//image41.png>
-Package pdftex.def Info: images//image41.png  used on input line 133.
-(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -867,6 +849,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4 <./images//smartwatts.png>]
+<images//image2.png, id=114, 1003.75pt x 501.875pt>
+File: images//image2.png Graphic file (type png)
+<use images//image2.png>
+Package pdftex.def Info: images//image2.png  used on input line 131.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image43.png, id=115, 1003.75pt x 501.875pt>
+File: images//image43.png Graphic file (type png)
+<use images//image43.png>
+Package pdftex.def Info: images//image43.png  used on input line 132.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+<images//image41.png, id=116, 1003.75pt x 501.875pt>
+File: images//image41.png Graphic file (type png)
+<use images//image41.png>
+Package pdftex.def Info: images//image41.png  used on input line 137.
+(pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -876,15 +874,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5 <./images//image2.png> <./images//image43.png> <./images//image41.png>]
-<images//image4.png, id=115, 1003.75pt x 501.875pt>
+<images//image4.png, id=125, 1003.75pt x 501.875pt>
 File: images//image4.png Graphic file (type png)
 <use images//image4.png>
-Package pdftex.def Info: images//image4.png  used on input line 142.
+Package pdftex.def Info: images//image4.png  used on input line 146.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image7.png, id=116, 1003.75pt x 501.875pt>
+<images//image7.png, id=126, 1003.75pt x 501.875pt>
 File: images//image7.png Graphic file (type png)
 <use images//image7.png>
-Package pdftex.def Info: images//image7.png  used on input line 143.
+Package pdftex.def Info: images//image7.png  used on input line 147.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 
@@ -898,15 +896,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6
 
  <./images//image4.png> <./images//image7.png>]
-<images//image25.png, id=124, 1003.75pt x 501.875pt>
+<images//image25.png, id=134, 1003.75pt x 501.875pt>
 File: images//image25.png Graphic file (type png)
 <use images//image25.png>
-Package pdftex.def Info: images//image25.png  used on input line 155.
+Package pdftex.def Info: images//image25.png  used on input line 159.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image34.png, id=125, 1003.75pt x 501.875pt>
+<images//image34.png, id=135, 1003.75pt x 501.875pt>
 File: images//image34.png Graphic file (type png)
 <use images//image34.png>
-Package pdftex.def Info: images//image34.png  used on input line 156.
+Package pdftex.def Info: images//image34.png  used on input line 160.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 
@@ -920,15 +918,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [7
 
  <./images//image25.png> <./images//image34.png>]
-<images//image19.png, id=134, 1003.75pt x 501.875pt>
+<images//image19.png, id=144, 1003.75pt x 501.875pt>
 File: images//image19.png Graphic file (type png)
 <use images//image19.png>
-Package pdftex.def Info: images//image19.png  used on input line 171.
+Package pdftex.def Info: images//image19.png  used on input line 175.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image37.png, id=135, 1003.75pt x 501.875pt>
+<images//image37.png, id=145, 1003.75pt x 501.875pt>
 File: images//image37.png Graphic file (type png)
 <use images//image37.png>
-Package pdftex.def Info: images//image37.png  used on input line 172.
+Package pdftex.def Info: images//image37.png  used on input line 176.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 
@@ -942,18 +940,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8
 
  <./images//image19.png> <./images//image37.png>]
-<images//image10.png, id=143, 1003.75pt x 501.875pt>
+<images//image10.png, id=153, 1003.75pt x 501.875pt>
 File: images//image10.png Graphic file (type png)
 <use images//image10.png>
-Package pdftex.def Info: images//image10.png  used on input line 190.
+Package pdftex.def Info: images//image10.png  used on input line 194.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image38.png, id=144, 1003.75pt x 501.875pt>
+<images//image38.png, id=154, 1003.75pt x 501.875pt>
 File: images//image38.png Graphic file (type png)
 <use images//image38.png>
-Package pdftex.def Info: images//image38.png  used on input line 191.
+Package pdftex.def Info: images//image38.png  used on input line 195.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--193
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 [][][][]
  []
 
@@ -968,15 +966,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [9
 
  <./images//image10.png> <./images//image38.png>]
-<images//image8.png, id=152, 1003.75pt x 501.875pt>
+<images//image8.png, id=162, 1003.75pt x 501.875pt>
 File: images//image8.png Graphic file (type png)
 <use images//image8.png>
-Package pdftex.def Info: images//image8.png  used on input line 199.
+Package pdftex.def Info: images//image8.png  used on input line 203.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image39.png, id=153, 1003.75pt x 501.875pt>
+<images//image39.png, id=163, 1003.75pt x 501.875pt>
 File: images//image39.png Graphic file (type png)
 <use images//image39.png>
-Package pdftex.def Info: images//image39.png  used on input line 200.
+Package pdftex.def Info: images//image39.png  used on input line 204.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 
@@ -990,20 +988,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10
 
  <./images//image8.png> <./images//image39.png>]
-<images//image30.png, id=161, 1003.75pt x 501.875pt>
+<images//image30.png, id=172, 1003.75pt x 501.875pt>
 File: images//image30.png Graphic file (type png)
 <use images//image30.png>
-Package pdftex.def Info: images//image30.png  used on input line 213.
+Package pdftex.def Info: images//image30.png  used on input line 217.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image35.png, id=162, 1003.75pt x 501.875pt>
+<images//image35.png, id=173, 1003.75pt x 501.875pt>
 File: images//image35.png Graphic file (type png)
 <use images//image35.png>
-Package pdftex.def Info: images//image35.png  used on input line 214.
+Package pdftex.def Info: images//image35.png  used on input line 218.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//cpus.png, id=163, 893.3375pt x 103.38625pt>
+<images//cpus.png, id=174, 893.3375pt x 103.38625pt>
 File: images//cpus.png Graphic file (type png)
 <use images//cpus.png>
-Package pdftex.def Info: images//cpus.png  used on input line 218.
+Package pdftex.def Info: images//cpus.png  used on input line 222.
 (pdftex.def)             Requested size: 357.32866pt x 41.35376pt.
 
 
@@ -1017,15 +1015,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [11
 
  <./images//image30.png> <./images//image35.png> <./images//cpus.png>]
-<images//image33.png, id=172, 1003.75pt x 501.875pt>
+<images//image33.png, id=183, 1003.75pt x 501.875pt>
 File: images//image33.png Graphic file (type png)
 <use images//image33.png>
-Package pdftex.def Info: images//image33.png  used on input line 240.
+Package pdftex.def Info: images//image33.png  used on input line 244.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
-<images//image36.png, id=173, 1003.75pt x 501.875pt>
+<images//image36.png, id=184, 1003.75pt x 501.875pt>
 File: images//image36.png Graphic file (type png)
 <use images//image36.png>
-Package pdftex.def Info: images//image36.png  used on input line 241.
+Package pdftex.def Info: images//image36.png  used on input line 245.
 (pdftex.def)             Requested size: 401.49289pt x 200.74643pt.
 
 
@@ -1064,16 +1062,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: B7838868E5C0157AF4DF3DDA4ECB3C3C;2169.
+(rerunfilecheck)             Checksum: DCD846CEA799CC13A05207618783D7CD;2405.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20063 strings out of 480195
- 345227 string characters out of 5894659
- 1050369 words of memory out of 5000000
- 37708 multiletter control sequences out of 15000+600000
+ 20068 strings out of 480195
+ 345315 string characters out of 5894659
+ 1051372 words of memory out of 5000000
+ 37711 multiletter control sequences out of 15000+600000
  481555 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  60i,31n,68p,1277b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1087,10 +1085,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (14 pages, 1544463 bytes).
+Output written on report.pdf (14 pages, 1545665 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

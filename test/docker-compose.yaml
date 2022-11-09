@@ -9,7 +9,6 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=1
-       - --time=300
        - run
   
   cpu-performance-20000-2: 
@@ -20,7 +19,6 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=2
-       - --time=300
        - run
 
   cpu-performance-20000-5: 
@@ -31,7 +29,6 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=5
-       - --time=300
        - run
 
   cpu-performance-20000-10: 
@@ -42,7 +39,6 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=10
-       - --time=300
        - run
 
   cpu-performance-20000-20: 
@@ -53,7 +49,6 @@ services:
        - cpu
        - --cpu-max-prime=20000
        - --threads=20
-       - --time=300
        - run
 
   cpu-performance-100000-1: 
@@ -64,7 +59,6 @@ services:
        - cpu
        - --cpu-max-prime=100000
        - --threads=1
-       - --time=300
        - run
 
 
@@ -76,7 +70,6 @@ services:
        - cpu
        - --cpu-max-prime=50000
        - --threads=1
-       - --time=300
        - run
 
 
