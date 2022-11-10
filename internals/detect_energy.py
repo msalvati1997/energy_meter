@@ -24,6 +24,7 @@ def main(host='localhost', port=8086, cont_name=""):
     client.switch_database(database)
     # Query
     query='SELECT "power" FROM "power_consumption" WHERE target = \''+cont_name+'\''
+    print(query)
     df = doQuery(client,query);
     plotTimeSeries(df)
 
@@ -39,6 +40,7 @@ def doQuery(client,query) :
     
     df = pd.DataFrame(columns=["time","power"],data=completed_list)
     print(df)
+    df.to_csv("results.csv")
     return df
 
 def plotDetrend(df) : 
@@ -98,4 +100,4 @@ def parse_args():
 
 if __name__ == '__main__':
     args = parse_args()
-    main(host=args.host, port=args.port)
+    main(host=args.host, port=args.port, cont_name= args.cont_name)
