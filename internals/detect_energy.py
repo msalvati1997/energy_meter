@@ -8,6 +8,7 @@ import argparse
 from statsmodels.tsa.stattools import adfuller, kpss
 from scipy import signal
 from statsmodels.tsa.seasonal import seasonal_decompose
+import datetime
 
 def getClient(host,port) : 
     try : 
@@ -26,7 +27,7 @@ def main(host='localhost', port=8086, cont_name=""):
     query='SELECT "power" FROM "power_consumption" WHERE target = \''+cont_name+'\''
     print(query)
     df = doQuery(client,query);
-    plotTimeSeries(df)
+    
 
 def doQuery(client,query) :
     completed_list=[]
@@ -43,47 +44,6 @@ def doQuery(client,query) :
     df.to_csv("results.csv")
     return df
 
-def plotDetrend(df) : 
-    # Time Series Decomposition
-    result_mul = seasonal_decompose(df['power'], model='multiplicative', extrapolate_trend='freq')
-
-    # Deseasonalize
-    deseasonalized = df.power.values / result_mul.seasonal
-
-    plt.savefig("deseasonalized.png")
-    
-def statTest(df) : 
-    # ADF Test
-    result = adfuller(df.power.values, autolag='AIC')
-    print(f'ADF Statistic: {result[0]}')
-    print(f'p-value: {result[1]}')
-    for key, value in result[4].items():
-        print('Critial Values:')
-        print(f'   {key}, {value}')
-
-    # KPSS Test
-    result = kpss(df.power.values, regression='c')
-    print('\nKPSS Statistic: %f' % result[0])
-    print('p-value: %f' % result[1])
-    for key, value in result[3].items():
-        print('Critial Values:')
-        print(f'   {key}, {value}')
-
-def plotTimeSeries(dataframe):
-    # Plotting the time series of given dataframe
-    plt.plot(dataframe.time, dataframe.power)
- 
-    # Giving title to the chart using plt.title
-    plt.title('Power by Date')
- 
-    plt.xticks(rotation=30, ha='right')
- 
-    # Providing x and y label to the chart
-    plt.xlabel('Date')
-    plt.ylabel('Power')
-    
-    plt.savefig("query.png")
-   
 
 def parse_args():
     """Parse the args from main."""
