@@ -35,13 +35,13 @@ def doQuery(client,query) :
     for result in results:
         for el in result :
             list = [] 
-            list.append(el['time'].split("T")[1])
+            list.append(el['time'])
             list.append(el['power'])
             completed_list.append(list)
     
     df = pd.DataFrame(columns=["time","power"],data=completed_list)
     print(df)
-    df.to_csv("results.csv")
+    df.to_csv("results2.csv")
     return df
 
 

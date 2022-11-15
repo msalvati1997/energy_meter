@@ -1,5 +1,3 @@
-from influxdb import InfluxDBClient
-from requests.exceptions import ConnectionError
 import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
@@ -8,106 +6,93 @@ import argparse
 from statsmodels.tsa.stattools import adfuller, kpss
 from scipy import signal
 from statsmodels.tsa.seasonal import seasonal_decompose
-import datetime
 from labellines import labelLine, labelLines
 import matplotx
+from peak_detection import *
+import pylab
 
-plt.rcParams["figure.figsize"] = (30,15)
-plt.rcParams['font.size'] =  22
+plt.rcParams["figure.figsize"] = (30,20)
+plt.rcParams['font.size'] =  12
 
 def main() : 
-
     df = pd.read_csv('case_study/results.csv', parse_dates=['time'])
     df['time'] = pd.to_datetime(df.time).dt.tz_localize(None)
-    calls = [["2022/11/10 09:18:50",6.639123623],["2022/11/10 09:19:08",0.001741013],["2022/11/10 09:20:10",0.001470028],["2022/11/10 09:20:11",0.001578345],
-    ["2022/11/10 09:20:14",0.001668836],["2022/11/10 09:21:00",0.001809]]
-    #for i in range(0,len(calls)) : 
-     #   plot_a_call(df,calls[i][0],calls[i][1],"call_"+str(i))
-    
-    plot_all(calls,df)
+    calls = [
+    ["09:18:50",6.639123623], #START # DURATION
+    ["09:19:08",0.001741013],
+    ["09:20:10",0.001470028],
+    ["09:20:11",0.001578345],
+    ["09:20:14",0.001668836],
+    ["09:21:00",0.001809],
+    ]
+    for i in range(0,len(calls)) : 
+        plot_a_call(df,calls[i][0],calls[i][1],"call_"+str(i))
+    plot_all(df)
 
 
 def plotTimeSeries(dataframe,title,start,end):
-    # Plotting the time series of given dataframe
+    
     plt.cla()
     plt.clf()
-
-    plt.plot(dataframe.time, dataframe.power)
-
-    plt.axvline(start,color="red", linestyle="--",label="serverledge start")
-    plt.axvline(end,color="red", linestyle="--",label="serverledge end")
-
-    # Giving title to the chart using plt.title
-    plt.title(title)
- 
-    plt.xticks(rotation=45, ha='right')
- 
-    # Providing x and y label to the chart
-    plt.xlabel('Date')
-    plt.ylabel('Power')
-   # Put a legend below current axis
-    plt.legend()
-    matplotx.line_labels()  
+    fig, axs = plt.subplots(2)
+    fig.suptitle(title)
+    axs[0].plot(dataframe.time, dataframe.power, label='power')
+    axs[0].axvline(start,color="red", linestyle="--",label="serverledge start")
+    axs[0].axvline(end,color="red", linestyle="--",label="serverledge end")
+    axs[0].set_title("power model")
+    axs[0].set_xlabel(xlabel='Date', rotation=45, ha='right')
+    axs[0].set_ylabel('Power')
+    axs[1].plot(dataframe.time, dataframe['power'].cumsum(skipna=False),  label='Cum sum')
+    axs[1].set_title("Cumulative sum of power")
+    axs[0].legend()
     
     plt.savefig("internals/"+title+".png")
+  
     
 def plot_a_call(df,event_start,event_duration,title) : 
-    start = event_start
     print("\nplot ", title)
-    date_start = datetime.datetime.strptime(event_start, '%Y/%m/%d %H:%M:%S')
-    date_start_1 = date_start
-    end = date_start+datetime.timedelta(seconds=event_duration)
-    date_end = date_start+datetime.timedelta(seconds=event_duration+3)
-    date_start = date_start+datetime.timedelta(seconds=-1.5)
+    date_start = pd.to_datetime(event_start).tz_localize(None)
+    date_end = date_start+datetime.timedelta(seconds=event_duration+2.5)
+    date_start = date_start+datetime.timedelta(seconds=-0.5)
     data_query = df[(df['time'] >= date_start) & (df['time'] <= date_end)]
-    plotTimeSeries(data_query, title,date_start_1,end)
+    start = date_start+datetime.timedelta(seconds=0.6)
+    end = start+datetime.timedelta(seconds=event_duration+0.6)
+    plotTimeSeries(data_query, title,start,end)
 
 
-def plot_all(calls,df) : 
-    colors = ["blue","green","red","cyan","magenta","yellow","black","white"]
-    
-    start = calls[0][0]
-    end_start=calls[len(calls)-1][0]
-    date_start = datetime.datetime.strptime(start, '%Y/%m/%d %H:%M:%S')
-    date_end = datetime.datetime.strptime(end_start, '%Y/%m/%d %H:%M:%S')
-    end_end=calls[len(calls)-1][1] 
-    end = date_end+datetime.timedelta(seconds=end_end)
-    data_query = df[(df['time'] >= date_start) & (df['time'] <= end)]
-
-     # Plotting the time series of given dataframe
+def plot_all(dataframe) : 
     plt.cla()
     plt.clf()
-
-    plt.plot(data_query.time, data_query.power)
-
-    plt.axvline(date_start,color="red", linestyle="--",label="serverledge start")
-    plt.axvline(end,color="red", linestyle="--",label="serverledge end")
-
-    for i in range(0,len(calls)): 
-         start = calls[i][0]
-         end=calls[i][1]
-         date_start = datetime.datetime.strptime(start, '%Y/%m/%d %H:%M:%S')
-         date_end = date_start+datetime.timedelta(seconds=end)
-         plt.axvline(date_start,color=colors[i], linestyle="--",label=str(i)+"_start")
-         plt.axvline(date_end,color=colors[i], linestyle="--",label=str(i)+"_end")
-
-    plt.title("all calls")
- 
-    plt.xticks(rotation=45, ha='right')
-    plt.xlabel('Date')
-    plt.ylabel('Power')
-    plt.legend(bbox_to_anchor=(1, 1), loc="upper left")
-   
-    plt.savefig("internals/"+"all_calls"+".png")
+    fig, axs = plt.subplots(2)
+    fig.suptitle("all")
+    axs[0].plot(dataframe.time, dataframe.power, label='power')
+    axs[0].set_title("power model")
+    axs[0].set_xlabel(xlabel='Date', rotation=45, ha='right')
+    axs[0].set_ylabel('Power')
+    axs[1].plot(dataframe.time, dataframe['power'].cumsum(skipna=False),  label='Cum sum')
+    axs[1].set_title("Cumulative sum of power")
+    axs[0].legend()
+    plt.savefig("internals/all.png")
 
 
+    
 
-
-
-
-
-
+def plot_peaks(y,lag,threshold,influence,title) : 
+    result = thresholding_algo(y, lag=lag, threshold=threshold, influence=influence)
+    pylab.subplot(211)
+    pylab.plot(np.arange(1, len(y)+1), y)
+    pylab.plot(np.arange(1, len(y)+1),
+            result["avgFilter"], color="cyan", lw=2)
+    pylab.plot(np.arange(1, len(y)+1),
+            result["avgFilter"] + threshold * result["stdFilter"], color="green", lw=2)
+    pylab.plot(np.arange(1, len(y)+1),
+            result["avgFilter"] - threshold * result["stdFilter"], color="green", lw=2)
+    pylab.subplot(212)
+    pylab.step(np.arange(1, len(y)+1), result["signals"], color="red", lw=2)
+    pylab.ylim(-1.5, 1.5)
+    pylab.title(title)
+    pylab.savefig("internals/"+title+"peaks.png")
 
    
 if __name__ == '__main__':
-    main() 
+    main()
