@@ -60,8 +60,29 @@ def plotTimeSeries(dataframe,title,start,end):
     axs[1].set_title("Cumulative sum of power")
     axs[1].set_xlabel(xlabel='Date', ha='right')
     axs[1].set_ylabel('Cumulative power')
+    #joins the x and y values
+    for x,y in zip(dataframe.time,dataframe['power'].cumsum(skipna=False)):
+        label = "{:.3f}".format(y)
+        axs[1].annotate(label, # this is the value which we want to label (text)
+                    (x,y), # x and y is the points location where we have to label
+                    textcoords="offset points",
+                    xytext=(0,10), # this for the distance between the points
+                    # and the text label
+                    ha='center',
+                    arrowprops=dict(arrowstyle="->", color='green'))
     scale=1.96
     rolling_mean = dataframe['power'].rolling(window=1).mean()
+    #joins the x and y values
+    for x,y in zip(dataframe.time,dataframe.power):
+        label = "{:.3f}".format(y)
+        axs[0].annotate(label, # this is the value which we want to label (text)
+                    (x,y), # x and y is the points location where we have to label
+                    textcoords="offset points",
+                    xytext=(0,10), # this for the distance between the points
+                    # and the text label
+                    ha='center',
+                    arrowprops=dict(arrowstyle="->", color='green'))
+
     mae = mean_absolute_error(dataframe['power'][1:], rolling_mean[1:])
     deviation = np.std(dataframe['power'][1:] - rolling_mean[1:])
     lower_bound = rolling_mean - (mae + scale * deviation)
