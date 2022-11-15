@@ -50,8 +50,9 @@ def plotTimeSeries(dataframe,title,start,end):
     fig, axs = plt.subplots(2)
     fig.suptitle(title)
     axs[0].plot(dataframe.time, dataframe.power, label='power')
-    axs[0].axvline(start,color="gray", linestyle=":",label="serverledge start")
-    axs[0].axvline(end,color="gray", linestyle=":",label="serverledge end") 
+    
+    axs[0].axvspan(start,end,facecolor='g', alpha=0.2, label="interval")
+    #axs[0].axvline(end,color="gray", linestyle=":",label="serverledge end") 
     axs[0].plot(dataframe.time,dataframe['power'].rolling(2).mean(),label='rolling_mean',color='green')
     axs[0].set_title("power model")
     axs[0].set_xlabel(xlabel='Date', ha='right')
@@ -91,6 +92,8 @@ def plotTimeSeries(dataframe,title,start,end):
     axs[0].plot(dataframe.time,lower_bound, 'r--')
     axs[0].legend()
     axs[1].legend()
+   
+    
     plt.savefig("internals/"+title+".png")
     '''
 
@@ -104,7 +107,8 @@ def plotTimeSeries(dataframe,title,start,end):
     plt.title('Change Point Detection: Pelt Search Search Method :'+ title)
     plt.savefig("internals/cp_"+title+".png")
    '''
-    
+  
+  
 def plot_a_call(df,event_start,event_duration,title) : 
     print("\nplot ", title)
     print("start ",event_start)
