@@ -13,6 +13,7 @@ import pylab
 from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
 from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
 import ruptures as rpt
+import math
 plt.style.use('fivethirtyeight')
 plt.rcParams["figure.figsize"] = (30,20)
 plt.rcParams['font.size'] =  20
@@ -22,6 +23,9 @@ plt.rcParams['font.monospace'] = 'Ubuntu Mono'
 plt.rcParams['figure.titlesize'] = 24
 import warnings
 warnings.filterwarnings('ignore')
+
+INTERVAL_REPORT = 0.5
+DELAY = 1.5
 def main() : 
     df = pd.read_csv('case_study/results.csv', parse_dates=['time'])
     df['time'] = pd.to_datetime(df.time).dt.tz_localize(None)
@@ -57,9 +61,9 @@ def plotTimeSeries(dataframe,title,start,end):
     axs[1].set_xlabel(xlabel='Date', ha='right')
     axs[1].set_ylabel('Cumulative power')
     scale=1.96
-    rolling_mean = dataframe['power'].rolling(window=2).mean()
-    mae = mean_absolute_error(dataframe['power'][2:], rolling_mean[2:])
-    deviation = np.std(dataframe['power'][1:] - rolling_mean[2:])
+    rolling_mean = dataframe['power'].rolling(window=1).mean()
+    mae = mean_absolute_error(dataframe['power'][1:], rolling_mean[1:])
+    deviation = np.std(dataframe['power'][1:] - rolling_mean[1:])
     lower_bound = rolling_mean - (mae + scale * deviation)
     upper_bound = rolling_mean + (mae + scale * deviation)
     axs[0].plot(dataframe.time,upper_bound, 'r--', label='Upper bound / Lower bound')
@@ -82,13 +86,23 @@ def plotTimeSeries(dataframe,title,start,end):
     
 def plot_a_call(df,event_start,event_duration,title) : 
     print("\nplot ", title)
+    print("start ",event_start)
+    print("duration", event_duration)
+
+    event_slots = event_duration/INTERVAL_REPORT
+    event_slots= math.ceil(event_slots)
+    print("duration slots" , event_slots*0.5)
+
+
     date_start = pd.to_datetime(event_start).tz_localize(None)
-    date_end = date_start+datetime.timedelta(seconds=event_duration+2.5)
-    date_start = date_start+datetime.timedelta(seconds=-0.5)
-    data_query = df[(df['time'] >= date_start) & (df['time'] <= date_end)]
-    start = date_start+datetime.timedelta(seconds=0.6)
-    end = start+datetime.timedelta(seconds=event_duration+0.6)
-    plotTimeSeries(data_query, title,start,end)
+    date_end = date_start+datetime.timedelta(seconds=event_slots*0.5)
+    date_query_end = date_start+datetime.timedelta(seconds=event_duration+2*DELAY)
+    start=date_start
+    data_query = df[(df['time'] >= date_start) & (df['time'] <= date_query_end)]
+
+    print("start" , start, "end -- ",date_end)
+    plotTimeSeries(data_query, title,start,date_end)
+        
 
 
 def plot_all(dataframe) : 
@@ -102,7 +116,7 @@ def plot_all(dataframe) :
     axs[0].set_ylabel('Power')
     axs[1].plot(dataframe.time, dataframe['power'].cumsum(skipna=False),  label='Cum sum')
     axs[1].set_title("Cumulative sum of power")
-    axs[0].plot(dataframe.time,dataframe['power'].rolling(2).mean(),label='rolling_mean',color='green')
+    axs[0].plot(dataframe.time,dataframe['power'].rolling(1).mean(),label='rolling_mean',color='green')
     axs[0].legend()
     axs[1].legend()
     axs[1].set_xlabel(xlabel='Date', ha='right')
