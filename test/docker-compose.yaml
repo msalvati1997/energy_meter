@@ -82,7 +82,6 @@ services:
        - --cpu-max-prime=20000
        - --threads=2
        - --rate=10
-       - --time=300
        - run
   
   cpu-performance-20-rate: 
@@ -94,7 +93,6 @@ services:
        - --cpu-max-prime=20000
        - --threads=2
        - --rate=20
-       - --time=300
        - run
 
   cpu-performance-30-rate: 
@@ -106,7 +104,6 @@ services:
        - --cpu-max-prime=20000
        - --threads=2
        - --rate=30
-       - --time=300
        - run
 
   cpu-performance-40-rate: 
@@ -118,7 +115,6 @@ services:
        - --cpu-max-prime=20000
        - --threads=2
        - --rate=40
-       - --time=300
        - run
     
   cpu-seq1: 

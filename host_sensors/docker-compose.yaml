@@ -9,12 +9,18 @@ services:
       - 8086:8086
     environment:
       - INFLUXDB_DB=powerapi_formula
+      - INFLUXDB_HTTP_LOG_ENABLED=true
+      - INFLUXDB_LOGGING_LEVEL=debug
+      - INFLUXDB_HTTP_FLUX_ENABLED=true
+      - DOCKER_INFLUXDB_INIT_ORG=org
     healthcheck:
       test: "curl -f http://localhost:8086/ping"
       interval: 3s
       timeout: 10s
       retries: 5
       start_period: 40s
+    command: -config /etc/influxdb/influxdb.conf
+
 
   mongo:
     container_name: mongo
@@ -53,7 +59,7 @@ services:
    
 
   power-api-smartwatts:
-    image: powerapi/smartwatts-formula
+    image: powerapi/smartwatts-formula:latest
     cap_add:
       - ALL
     volumes:
