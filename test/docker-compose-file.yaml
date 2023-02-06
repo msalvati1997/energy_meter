@@ -1,0 +1,42 @@
+version: '2.2'
+
+services:
+
+  cpu-io-rndrd-500M-128 : 
+     container_name : cpu-io-rndrd-500M-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=500M  --file-num=128 prepare
+          sysbench fileio --file-total-size=500M  --file-test-mode=rndrw  --max-time=300  run
+          sysbench fileio --file-total-size=500M  --file-num=128 cleanup
+          "
+
+  cpu-io-rndrd-2G-128 : 
+     container_name : cpu-io-rndrd-2G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=2G --file-num=128 prepare
+          sysbench fileio --file-total-size=2G --file-test-mode=rndrw --file-num=128 --max-time=300 run
+          sysbench fileio --file-total-size=2G --file-num=128 cleanup
+          "
+
+  cpu-io-rndrd-3G-128: 
+     container_name : cpu-io-rndrd-3G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=3G --file-num=128 prepare
+          sysbench fileio --file-total-size=3G --file-num=128 --file-test-mode=rndrw --max-time=300 run
+          sysbench fileio --file-total-size=3G --file-num=128 cleanup
+          "
+  cpu-io-rndrd-4G-128: 
+     container_name : cpu-io-rndrd-4G-128
+     image :  severalnines/sysbench
+     command : >
+        bash -c "
+          sysbench fileio --file-total-size=4G --file-num=128 prepare
+          sysbench fileio --file-total-size=4G --file-num=128 --file-test-mode=rndrw --max-time=300 run
+          sysbench fileio --file-total-size=4G --file-num=128 cleanup
+          "

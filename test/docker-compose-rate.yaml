@@ -1,0 +1,47 @@
+version: '2.2'
+
+services:
+
+  cpu-performance-10-rate: 
+     container_name : cpu-performance-10-rate
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=200000
+       - --threads=1
+       - --rate=10
+       - run
+  
+  cpu-performance-20-rate: 
+     container_name : cpu-performance-20-rate
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=200000
+       - --threads=1
+       - --rate=20
+       - run
+
+  cpu-performance-30-rate: 
+     container_name : cpu-performance-30-rate
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=200000
+       - --threads=1
+       - --rate=30
+       - run
+
+  cpu-performance-40-rate: 
+     container_name : cpu-performance-40-rate
+     image :  severalnines/sysbench
+     command :
+       - sysbench
+       - cpu
+       - --cpu-max-prime=200000
+       - --threads=1
+       - --rate=40
+       - run

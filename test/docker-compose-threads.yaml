@@ -1,0 +1,74 @@
+version: '2.2'
+
+services:
+
+  cpu-performance-20000-1: 
+      container_name : cpu-performance-20000-1
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=1
+        - run
+    
+    cpu-performance-20000-2: 
+      container_name : cpu-performance-20000-2
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=2
+        - run
+
+    cpu-performance-20000-5: 
+      container_name : cpu-performance-20000-5
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=5
+        - run
+
+    cpu-performance-20000-10: 
+      container_name : cpu-performance-20000-10
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=10
+        - run
+
+    cpu-performance-20000-20: 
+      container_name : cpu-performance-20000-20
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=20
+        - run
+
+    cpu-performance-100000-1: 
+      container_name : cpu-performance-100000-1
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=100000
+        - --threads=1
+        - run
+
+
+    cpu-performance-50000-1: 
+      container_name : cpu-performance-50000-1
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=50000
+        - --threads=1
+        - run

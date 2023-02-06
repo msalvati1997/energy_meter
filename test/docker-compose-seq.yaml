@@ -1,0 +1,36 @@
+version: '2.2'
+
+services:
+  cpu-seq1: 
+      container_name : cpu-seq300
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=1
+        - --time=300
+        - run
+
+    cpu-seq2 : 
+      container_name : cpu-seq180
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=1
+        - --time=180
+        - run
+    
+    cpu-seq3 : 
+      container_name : cpu-seq60
+      image :  severalnines/sysbench
+      command :
+        - sysbench
+        - cpu
+        - --cpu-max-prime=20000
+        - --threads=1
+        - --time=60
+        - run 
+  
