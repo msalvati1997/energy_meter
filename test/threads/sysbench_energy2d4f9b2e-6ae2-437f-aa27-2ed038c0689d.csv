@@ -1,0 +1,17 @@
+,0,1,2,3,4,5,6,7,8,9
+0,#datatype,string,long,dateTime:RFC3339,dateTime:RFC3339,string,string,string,string,double
+1,#group,false,false,true,true,true,true,true,true,false
+2,#default,_result,,,,,,,,
+3,,result,table,_start,_stop,_field,_measurement,sensor,target,_value
+4,,,0,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,cpu-performance-2000000-1,0.058343134523665
+5,,,1,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,cpu-performance-2000000-10,0.13505442432945552
+6,,,2,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,cpu-performance-2000000-2,0.10555242526237267
+7,,,3,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,cpu-performance-2000000-20,0.13652354579742593
+8,,,4,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,cpu-performance-2000000-5,0.13296278166167394
+9,,,5,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,global,0.8544865792279134
+10,,,6,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,host_sensors-power-api-hwpc-1,0.004264880246174474
+11,,,7,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,host_sensors-power-api-smartwatts-1,0.037681683940012936
+12,,,8,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,influx,0.0065917310401333844
+13,,,9,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,mongo,0.19213944473733024
+14,,,10,2023-02-05T12:56:10.189451863Z,2023-02-06T12:56:10.189451863Z,power,power_consumption,sensor,rapl,1.118989512405395
+15,,,,,,,,,,

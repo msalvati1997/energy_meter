@@ -20,9 +20,9 @@
       "collection": "smartwatts"
     }
   },
-  "cpu-frequency-base": 2000,
-  "cpu-frequency-min": 1200,
-  "cpu-frequency-max": 3000,
+  "cpu-frequency-base": 2600,
+  "cpu-frequency-min": 800,
+  "cpu-frequency-max": 3500,
   "real-time-mode": true,
   "learn-min-samples-required": 10,
   "learn-history-window-size": 60,

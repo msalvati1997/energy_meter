@@ -13,7 +13,8 @@ services:
      command :
        - sysbench
        - cpu
-       - --events=200000
+       - --events=200000000
+       - --cpu-max-prime=2000000
        - --time=300
        - run 
 
@@ -29,7 +30,8 @@ services:
      command :
        - sysbench
        - cpu
-       - --events=200000
+       - --events=200000000
+       - --cpu-max-prime=2000000
        - --time=300
        - run 
 
@@ -46,7 +48,8 @@ services:
      command :
        - sysbench
        - cpu
-       - --events=200000
+       - --events=200000000
+       - --cpu-max-prime=2000000
        - --time=300
        - run 
 
@@ -63,6 +66,7 @@ services:
      command :
        - sysbench
        - cpu
-       - --events=200000
+       - --events=200000000
+       - --cpu-max-prime=2000000
        - --time=300
        - run 
