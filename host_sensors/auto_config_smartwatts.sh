@@ -39,5 +39,5 @@ echo "
   \"disable-dram-formula\": true,
   \"sensor-report-sampling-interval\": 1000
 }
-" > ./internal/energy/host_sensors/smartwatts_config.json
+" > ./host_sensors/smartwatts_config.json
 

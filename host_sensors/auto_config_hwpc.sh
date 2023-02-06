@@ -32,5 +32,5 @@ echo "
     }
   }
 }
-" > ./internal/energy/host_sensors/hwpc_config.json
+" > ./host_sensors/hwpc_config.json
 
