@@ -1,5 +1,5 @@
 cff-version: 1.2.0
 authors:
-- family-names: "Martina"
-title: "energy_meter"
+- family-names: "M. Salvati"
+title: "Energy meter of a docker container"
 url: "https://github.com/msalvati1997/energy_meter"
